@@ -4,7 +4,7 @@ SQL> create table student101(
      id number not null,
      deptId integer,
      Primary Key(id),
-     Foreign Key(deptId) references Department(DeptId));
+     Foreign Key(deptId) references Department(DeptId) on delete cascade);
      
 SQL> check value:
 column_name number(10) constraint more_than_5000 check(column_name > 5000)

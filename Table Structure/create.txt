@@ -5,3 +5,6 @@ SQL> create table student101(
      deptId integer,
      Primary Key(id),
      Foreign Key(deptId) references Department(DeptId));
+     
+SQL> check value:
+column_name number(10) constraint more_than_5000 check(column_name > 5000)

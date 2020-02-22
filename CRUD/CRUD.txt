@@ -4,4 +4,5 @@ update student101 set name = 'Kazi Omar' where id = 1;
 
 delete from student101 where id = 3;
 
- select * from student101 where name='Saad' and id='2';
+select * from student101 where name='Saad' and id='2';
+select * from student101 where name != 'Saad';

@@ -2,3 +2,5 @@ insert into student101(id,name,birthDate) values(1,'Kazi Dip',sysdate);
 
 update student101 set name = 'Kazi Omar' where id = 1;
 
+delete from student101 where id = 3;
+

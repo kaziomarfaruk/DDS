@@ -1,0 +1,7 @@
+
+SQL> create table student101(
+     name varchar2(10) not null,
+     id number not null,
+     deptId integer,
+     Primary Key(id),
+     Foreign Key(deptId) references Department(DeptId));

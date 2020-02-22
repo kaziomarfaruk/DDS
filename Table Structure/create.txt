@@ -6,9 +6,9 @@ SQL> create table student101(
      Primary Key(id),
      Foreign Key(deptId) references Department(DeptId));
      
-     
-Foreign Key(deptId) references Department(DeptId) on delete cascade	
-Foreign Key(deptId) references Department(DeptId) on delete set null
+Foreign Key(deptId) references Department(DeptId) -- will not allow to delete dependent column
+Foreign Key(deptId) references Department(DeptId) on delete cascade	-- will delete both the dependencies
+Foreign Key(deptId) references Department(DeptId) on delete set null  -- will set the dependencies to null after delete
      
 SQL> check value:
 column_name number(10) constraint more_than_5000 check(column_name > 5000)
